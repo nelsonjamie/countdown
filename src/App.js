@@ -1,6 +1,9 @@
 
 import React, { useEffect, useState } from 'react';
 import './App.css';
+import image from "./secrets-aura-cozumel.jpg"
+
+
 
 
 function App() {
@@ -55,10 +58,11 @@ function App() {
     return (
     <div className="App">
       <div className="App-header">
+        <img src={image} alt="hotel" className="frame" />
         <h1>Countdown to Cozumel {year}</h1>
 
         {timerComponents.length ? timerComponents : <span>Time's up!</span>}
-
+        <h5>Check out <a href='https://www.hyatt.com/en-US/hotel/mexico/secrets-aura-cozumel/seacz'>our hotel</a></h5>
       </div>
   </div>)
 
